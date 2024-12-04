@@ -25,7 +25,7 @@ type MessageBodyType = {
 export type MessageType = {
   id: number;
   user: UserType;
-  message: MessageBodyType
+  message: MessageBodyType;
 };
 
 // структуру объекта не менять
@@ -36,7 +36,7 @@ export const message0: MessageType = {
     name: "Some Name", // можно менять
   },
   message: {
-    text: "some textsome textsome textsome textsome textsome textsome text", // можно менять
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", // можно менять
     time: "22:00", // можно менять
   },
 };
@@ -56,6 +56,7 @@ const HW1 = () => {
   return (
     <div id={"hw1"}>
       <div className={s2.hwTitle}>Homework #1</div>
+      <hr className={s2.divider} />
       <div className={s2.hw}>
         {/*проверка отображения (не менять)*/}
         <div>
@@ -66,6 +67,7 @@ const HW1 = () => {
         {/*для автоматической проверки дз (не менять)*/}
         <MessageSender M={Message} />
       </div>
+      <hr className={s2.divider} />
     </div>
   );
 };
