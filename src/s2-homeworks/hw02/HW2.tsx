@@ -67,6 +67,7 @@ function HW2() {
                     filter={filter}
                 />
             </div>
+            <hr className={s2.divider} />
         </div>
     )
 }
